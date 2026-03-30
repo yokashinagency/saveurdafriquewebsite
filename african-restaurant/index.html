@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Bites - Taste the Heart of Africa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Ô Délices des Saveurs" class="logo-img">
+                <span>Ô Délices des Saveurs</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Ô Délices des Saveurs</h1>
+                <p class="hero-tagline">Les meilleurs plats africains de tout montpellier c'est ici !</p>
+                <p class="hero-description">découvez les délices de l'afrique en réservant.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-calendar"></i> Faire une réservation.
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Menu</h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Snacks -->
+                <div class="menu-item" data-category="snacks">
+                    <div class="menu-item-image">
+                        <img src="images/img1.jpg" alt="Meat Pies">
+                        <p>Feuille de vernone et pâte d'arachides</p>
+                        <div class="menu-item-price">15€</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>N'dole</h3>
+                        <p></p>
+                        <div class="menu-item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Dishes -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="images/img2.jpg" alt="Jollof Rice">
+                        <div class="menu-item-price">13€</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Thiep Viande</h3>
+                        <p>riz, viandes et légumes frais</p>
+                        <div class="menu-item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="images/img4.jpg" alt="Hibiscus Tea">
+                        <div class="menu-item-price">12€</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Yassa poulet</h3>
+                        <p>riz oignon à la moutarde et poulet</p>
+                        <div class="menu-item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>L'afrique dans notre assiette.</h2>
+                <p>Par des avis réel de nos clients</p>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Très bonne cuisine africaine et très généreuse. 
+                            Le patron prépare les plats devant vos yeux et toujours avec le sourire.
+                            En plein cœur de Montpellier, je recommande à 100%!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/pfp1.jpg" alt="Customer">
+                            <div>
+                                <h4>Anais Sickout.</h4>
+                                <p>Client régulière</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Très bon restaurant avec de bons plats. Hygiène et propreté au rendez-vous.                            
+                            Merci Gustave ☺️"</p>
+                        <div class="testimonial-author">
+                            <img src="images/pfp2.png" alt="Customer">
+                            <div>
+                                <h4>Ludivine Ebagnirin</h4>
+                                <p>J'irai avec des amies la prochaine fois !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Un patron souriant, des cuisiniers aimables au petit soins des clients et un repas 
+                            qui vous emporte dans les entrailles tropicales qui mêlent souvenirs et nostalgie de l’Afrique. 
+                            Je note 5/5 merci et bon courage"</p>
+                        <div class="testimonial-author">
+                            <img src="images/pfp3.png" alt="Customer">
+                            <div>
+                                <h4>Nabi Ibrahim Bakoua</h4>
+                                <p>Client de longue date</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Les délices d'Afrique n'attendent plus que vous.</h2>
+                <p>D'autres surprises vous attendent dans notre restaurant.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gal1.jpg" alt="African Dish">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal2.jpg" alt="African Dish">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal3.jpg" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gal4.jpg" alt="African Dish">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Rejoignez-nous</h2>
+                <p>Nous vous attendons avec impatience</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ou est ce qu'on se trouve ?</h3>
+                            <p><br>12 Rue de la Méditerranée, 34000 Montpellier</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Quand est ce qu'on ouvre ?</h3>
+                            <p>tous les jours de 9h30 a 22h30, 7 jours sur 7.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Contact</h3>
+                            <p><a href="tel:+33612345678">07 58 63 43 15</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message pour réserver.</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyez</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Restez connecté</h2>
+                    <p>Abonnez-vous pour recevoir des mises à jour sur les offres spéciales, les nouveaux plats et les conseils culinaires africains</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Entrez votre email" required>
+                    <button type="submit" class="btn btn-primary">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Ô Délices des Saveurs</span>
+                    </div>
+                    <p>Goûtez le cœur de l'Afrique</p>
+                  
+                </div>
+
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#contact">Table Reservations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Ô Délices des Saveurs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
